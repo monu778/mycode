@@ -1,9 +1,10 @@
+// [6,3,5,8] = [6][3][5][8][6,3][5,8]  ==> 6 , max noof odd numbers = 1
+// [2,1,2,1,3] = [[2][1][3][2,1][1,2][2,1,2][1,3][1,2,1][2,1,3][2,1,2,1]] ==> 10, max noof odd numbers=2
 let nums = [6,3,5,8];
 let n=1;
 
 let main_arr = [];
 for(let i=1;i<nums.length;i++) {
-    let arr = [];
     for(let j=0;j<nums.length;j++) {
         let small_arr = [];
         let odd = 0;
